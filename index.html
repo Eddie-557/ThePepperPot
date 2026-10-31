@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Pepper Pot — bold Nigerian flavours, thoughtfully prepared. Explore our menu and order your favourites.">
+  <meta name="theme-color" content="#18251d">
+  <title>The Pepper Pot | Nigerian Kitchen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="The Pepper Pot home">
+        <span class="brand-mark" aria-hidden="true">P<span>.</span></span>
+        <span class="brand-name">THE PEPPER POT<small>NIGERIAN KITCHEN</small></span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open navigation">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="primary-nav" id="primary-navigation" aria-label="Main navigation">
+        <a href="#menu">Our menu</a>
+        <a href="#story">Our story</a>
+        <a href="#visit">Find us</a>
+        <a class="nav-order" href="#menu">Order a meal <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="hero-image" role="img" aria-label="A richly served Nigerian rice dish with grilled chicken"></div>
+      <div class="hero-shade"></div>
+      <div class="container hero-content">
+        <p class="eyebrow light-eyebrow"><span></span> GOOD FOOD. GOOD COMPANY.</p>
+        <h1>Rooted in flavour.<br><em>Made to be shared.</em></h1>
+        <p class="hero-copy">A fresh take on the Nigerian dishes you know and love. Big-hearted cooking, beautiful ingredients, and a little extra pepper.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#menu">Explore the menu <span aria-hidden="true">↗</span></a>
+          <a class="text-link light-link" href="#story">Get to know us <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="hero-note"><span class="note-line"></span><span>FRESHLY PREPARED, EVERY DAY</span></div>
+      </div>
+      <div class="hero-index" aria-hidden="true">01 / 03</div>
+    </section>
+
+    <section class="intro-strip" aria-label="Our approach">
+      <div class="container intro-grid">
+        <p>THE COMFORT OF HOME.<br><span>THE JOY OF SOMETHING NEW.</span></p>
+        <p class="intro-detail">From slow-simmered classics to weekend favourites, every plate is an invitation to settle in and savour the moment.</p>
+        <span class="pepper-doodle" aria-hidden="true">✳</span>
+      </div>
+    </section>
+
+    <section class="menu-section section-pad" id="menu">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span></span> A LITTLE SOMETHING FOR EVERYONE</p>
+            <h2>From our kitchen<br><em>to your table.</em></h2>
+          </div>
+          <p class="section-aside">Familiar favourites, generous portions, and flavours worth coming back for.</p>
+        </div>
+
+        <div class="menu-toolbar">
+          <div class="menu-tabs" role="group" aria-label="Filter menu by category">
+            <button class="menu-tab is-active" type="button" data-filter="all" aria-pressed="true">All dishes</button>
+            <button class="menu-tab" type="button" data-filter="mains" aria-pressed="false">Mains</button>
+            <button class="menu-tab" type="button" data-filter="small-chops" aria-pressed="false">Small chops</button>
+            <button class="menu-tab" type="button" data-filter="drinks" aria-pressed="false">Drinks</button>
+          </div>
+          <p class="menu-note">Prices in Nigerian naira (₦)</p>
+        </div>
+
+        <div class="menu-grid">
+          <article class="menu-card" data-category="mains">
+            <div class="dish-image dish-jollof" role="img" aria-label="Nigerian jollof rice with grilled chicken"></div>
+            <div class="dish-info"><div class="dish-title"><h3>Party Jollof & Chicken</h3><span>₦8,500</span></div><p>Smoky, celebratory jollof with spicy grilled chicken and a crisp side salad.</p><span class="dish-tag">HOUSE FAVOURITE</span></div>
+          </article>
+          <article class="menu-card" data-category="mains">
+            <div class="dish-image dish-soup" role="img" aria-label="A bowl of Nigerian egusi soup with assorted meat"></div>
+            <div class="dish-info"><div class="dish-title"><h3>Egusi & Pounded Yam</h3><span>₦9,000</span></div><p>Rich melon-seed soup, leafy greens and assorted meat with soft pounded yam.</p></div>
+          </article>
+          <article class="menu-card" data-category="mains">
+            <div class="dish-image dish-fish" role="img" aria-label="Grilled whole fish with vegetables"></div>
+            <div class="dish-info"><div class="dish-title"><h3>Grilled Croaker</h3><span>₦12,500</span></div><p>Well-seasoned croaker, flame-grilled and served with pepper sauce and plantain.</p></div>
+          </article>
+          <article class="menu-card" data-category="small-chops">
+            <div class="dish-image dish-chops" role="img" aria-label="Nigerian small chops including puff puff and spring rolls"></div>
+            <div class="dish-info"><div class="dish-title"><h3>Small Chops Platter</h3><span>₦6,000</span></div><p>A moreish mix of puff-puff, samosa, spring rolls and golden peppered gizzards.</p></div>
+          </article>
+          <article class="menu-card" data-category="mains">
+            <div class="dish-image dish-ofada" role="img" aria-label="Ofada rice with ayamase pepper sauce"></div>
+            <div class="dish-info"><div class="dish-title"><h3>Ofada Rice & Ayamase</h3><span>₦8,000</span></div><p>Local rice with our slow-cooked green pepper sauce and assorted proteins.</p></div>
+          </article>
+          <article class="menu-card" data-category="drinks">
+            <div class="dish-image dish-zobo" role="img" aria-label="A glass of chilled hibiscus zobo drink"></div>
+            <div class="dish-info"><div class="dish-title"><h3>House Zobo</h3><span>₦1,800</span></div><p>Chilled hibiscus, ginger and pineapple. Bright, refreshing and made in-house.</p></div>
+          </article>
+        </div>
+        <p class="menu-disclaimer">Sample menu and prices for this fictional restaurant. Items and prices are illustrative.</p>
+      </div>
+    </section>
+
+    <section class="story-section" id="story">
+      <div class="story-photo" role="img" aria-label="A chef preparing a meal in a warm restaurant kitchen"></div>
+      <div class="story-content">
+        <p class="eyebrow light-eyebrow"><span></span> THE HEART OF THE POT</p>
+        <h2>Good food has<br><em>a way of bringing<br>us together.</em></h2>
+        <p>The Pepper Pot is imagined as a neighbourhood kitchen with a love for Nigeria's rich food culture. We take inspiration from family tables, market-fresh ingredients and the unmistakable aroma of a pot just coming off the fire.</p>
+        <p>Our philosophy is simple: cook with care, serve with warmth, and always leave room for one more bite.</p>
+        <a class="text-link light-link" href="#visit">Come say hello <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+
+    <section class="visit-section section-pad" id="visit">
+      <div class="container visit-grid">
+        <div>
+          <p class="eyebrow"><span></span> YOUR TABLE IS WAITING</p>
+          <h2>Make yourself<br><em>at home.</em></h2>
+          <p class="visit-copy">Planning lunch, dinner or a little catch-up? We would love to welcome you.</p>
+          <a class="button button-dark" href="#order">Start an order <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="visit-details">
+          <div class="detail-block">
+            <span class="detail-number">01</span>
+            <div><h3>Opening hours</h3><p>Monday – Saturday <strong>10:00am – 9:00pm</strong><br>Sunday <strong>12:00pm – 7:00pm</strong></p></div>
+          </div>
+          <div class="detail-block">
+            <span class="detail-number">02</span>
+            <div><h3>Find our kitchen</h3><p>Sample address: 12 Pepper Lane,<br>Victoria Island, Lagos, Nigeria.</p><small>Fictional location for demonstration only.</small></div>
+          </div>
+          <div class="detail-block">
+            <span class="detail-number">03</span>
+            <div><h3>Let's talk food</h3><p>WhatsApp ordering is available through the demo button below.</p><small>Placeholder number only — replace before publishing.</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="order-banner" id="order">
+      <div class="container order-inner">
+        <div><p class="eyebrow light-eyebrow"><span></span> SOMETHING DELICIOUS IS A MESSAGE AWAY</p><h2>Craving something<br><em>peppery?</em></h2></div>
+        <a class="whatsapp-button" href="https://wa.me/2348000000000?text=Hello%20The%20Pepper%20Pot%2C%20I%27d%20like%20to%20place%20an%20order." target="_blank" rel="noopener noreferrer" aria-label="Order on WhatsApp using the fictional demo number"> <span class="whatsapp-icon" aria-hidden="true">◉</span> Order on WhatsApp <span aria-hidden="true">↗</span></a>
+      </div>
+      <p class="container demo-warning">Demo link only: +234 800 000 0000 is a fictional placeholder and is not a real business contact.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <a class="brand footer-brand" href="#top" aria-label="The Pepper Pot home"><span class="brand-mark">P<span>.</span></span><span class="brand-name">THE PEPPER POT<small>NIGERIAN KITCHEN</small></span></a>
+      <p>Rooted in flavour.<br>Made to be shared.</p>
+      <a class="back-top" href="#top">Back to top ↑</a>
+    </div>
+    <div class="container footer-bottom"><span>© <span id="year"></span> The Pepper Pot</span><span>Fictional restaurant concept · Portfolio demonstration</span></div>
+  </footer>
+</body>
+</html>
